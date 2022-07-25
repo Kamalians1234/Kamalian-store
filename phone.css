@@ -1,0 +1,23 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+    
+}
+
+
+
+
+/* home */
+#home{
+    height: 390px;
+
+}
+
+#home::before{
+    height: 1200px;
+    width: 800px;
+}
+
+
+
+ 

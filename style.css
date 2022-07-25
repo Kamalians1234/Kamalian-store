@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS VAriables */
+:root{
+    --navbar-height: 59px
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+ /* Navigation Bar : logo and image */
+#logo{
+margin: 1px 1px;
+}
+
+#logo img{
+    height: 100px;
+margin: 1px 1px;
+}
+
+ /* Navigation Bar : List Styling */
+ #navbar{
+    position: relative;
+    
+ }
+ #navbar ul{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    
+ }
+
+ #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: .2;
+        
+     }
+ 
+
+ #navbar ul li{
+    /* color: white; */ 
+    list-style: none;
+    font-size: 1.2rem;
+ }
+ 
+
+ #navbar ul li a{
+    color: rgb(2, 2, 2);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+ }
+ #navbar ul li a:hover{
+ color: black;
+ background-color: rgb(179, 19, 19);
+ }
+
+ /* Home Section */
+ #home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 400px;
+    
+    justify-content: center;
+    align-items: center;
+ }
+
+ #home::before{
+    content: "";
+    background: url(/images/bg5.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+ }
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+/* Unstiched */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box {
+    border: 2px solid brown;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color: rgb(255, 251, 17);
+    
+    
+
+}
+
+#services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+    padding: 3px;
+    border-radius: 23px;
+}
+
+
+
+
+
+/* Utility classes*/
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondry{
+        font-size: 3.8rem;
+        padding: 12px;
+} 
+
+
+.btm{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 17px ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+   
+
